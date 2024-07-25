@@ -1,24 +1,28 @@
 @import url(reset.css);
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 body {
-  font-family: 'Raleway';
-  
+  font-family: 'open Sans';
+  text-align: center;
 }
 header {
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin-top: 3rem;
+  
 
   ul{
     list-style: none;
     display: flex;
+    
     gap: 1rem;
     li a {
       text-decoration: none;
-      
-    }
+      font-family: 'Raleway', sans-serif;
+      color: hsl(238, 22%, 44%)
+    } 
   }
 }
 main {
@@ -32,14 +36,16 @@ main {
     
   }
    h1 {
-    color: black;
-    font-weight: bolder;
+    color: hsl(243, 87%, 12%);
+    font-weight: 800;
+    font-size: 1.6rem;
+    font-family: 'Raleway';
 
     ;
   }
   p{
-    color: gray;
     font-size: 18px;
+    color: hsl(243, 87%, 12%);
   }
   .input {
     display: flex;
@@ -48,19 +54,72 @@ main {
     margin-top: 1.5rem;
     gap: .5rem;
   }
-  .email {
-    border: 2px light  black ;
-  }
+  
+}
+.email {
+  border: 2px light black;
+  padding: .5rem 1rem;
+  width: 100%;
 }
 .btn {
   padding: .2rem 1rem;
   color: white;
-  background-color: rgb(47, 101, 249);
+  background-color: hsl(224, 93%, 58%);
   border: none;
   border-radius: 5px;
   font-size: 1.2rem;
+  width: 100%;
+  cursor: pointer;
 }
 
 .section2 {
   margin-top: 3.8rem;
+  p{
+    color: hsl(250, 11%, 55%) ;
+  }
+  .allow-man {
+    position: absolute;
+    margin-top: 2rem;
+  }
+  .allow-man{
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: 0px;
+  }
+  .allow-text{
+    text-decoration: none;
+    color: hsl(170, 45%, 43%);
+    font-size: 16px;
+  }
+  .underline{
+    width: 162px;
+    height: 5px;
+    background-color: hsl(170, 45%, 43%);
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    left: 0;
+    top: -30px;
+  }
+  .arrow{
+   position: relative;
+   top: -20px;
+   left: 255px ;
+   width: 20px;
+  }
+}
+.quotes-content {
+  margin: 4rem 0rem;
+  border: 3px solid white;
+  box-shadow: 0 0 10px 10px rgb(242, 241, 247);
+  padding: 1rem 2rem;
+}
+.man-content {
+  position: absolute;
+  .man-photo {
+    width: 20%;
+    border-radius: 50%;
+    
+  }
 }
