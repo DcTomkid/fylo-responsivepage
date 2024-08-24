@@ -34,7 +34,7 @@ header {
     gap: 1rem;
 
     li {
-      font-size: 10px;
+      font-size: 16px;
     }
 
     li a {
@@ -88,6 +88,7 @@ footer {
   }
   
 }
+
 /* .second-footer {
   display: flex;
   justify-content: space-between;
@@ -263,8 +264,76 @@ footer {
 }
 .icons {
   display: flex;
-  width: 50vw;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
+  width: 35%;
+}
+
+@media (min-width: 768px) {
+  body {
+      font-family: 'open Sans';
+      margin: 0 auto;
+      padding: 0;
+      text-align: center;
+    }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2rem;
+    li{
+      font-size: 20px;
+    }
+  }
+  .section1-text {
+    text-align: left;
+  }
+  .section1, .section2,.section3, .first-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .input {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .btn {
+    width: 20vw;
+    height: 3rem;
+  }
+  .section1-details{
+    order: 3;
+    
+  }
+  .section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+    font-size: 10px;
+    margin-top: 3rem;
+    background-image: url(./images/bg-curve-desktop.svg);
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+
+  }
+  .section2-img {
+    order: 3;
+  }
+  .section2-main-text {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    min-width: 50%;
+    text-align: left;
+    margin-top: 6rem;
+  }
 }
